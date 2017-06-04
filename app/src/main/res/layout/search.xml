@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg">
+        <Button
+            android:id="@+id/back2"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/back"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/title_text"
+            android:text="   搜索联系人"
+            android:textColor="#ffff"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#ffffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48"
+            android:background="@drawable/search_small"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:hint="   search"
+            android:textColorHint="#a1a1a1"
+            android:layout_weight="312"/>
+    </LinearLayout>
+</LinearLayout>

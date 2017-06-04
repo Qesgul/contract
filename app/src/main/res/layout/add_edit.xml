@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg">
+        <Button
+            android:id="@+id/left"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:background="@drawable/bg"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/middle"
+            android:text="           联系人信息"
+            android:textColor="#ffff"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical" />
+        <Button
+            android:id="@+id/right"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:text="编辑"
+            android:background="@drawable/bg"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:id="@+id/ll"
+        android:layout_below="@+id/top1"
+        >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="姓名"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/edit_name"
+                android:text="1"
+                android:textSize="25dp"
+                android:lines="1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <!-- 电话 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话"
+                android:textSize="20dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/edit_number"
+                android:text="2"
+                android:textSize="25dp"
+                android:numeric="integer"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000000"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/call"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="打电话" />
+        <Button  android:id="@+id/but"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:text="生成名片"/>
+        <ImageView
+            android:id="@+id/img_only"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <!-- 姓名 -->
+    </LinearLayout>
+
+</RelativeLayout>
